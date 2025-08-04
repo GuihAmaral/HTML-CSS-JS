@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+:root {
+    --Jasmine:#EECF6D;
+    --White:rgb(255, 255, 255);
+    --Grey700:rgb(51, 51, 51);
+    --Grey800:rgb(31, 31, 31);
+    --Grey900:rgb(20, 20, 20);
+
+    --default-font: 'inter'
+    --Weights: 400, 600, 700
+}
+
+* {
+    color: white;
+}
+
+body {
+    background-color: var(--Grey900);
+    font-family: inter;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header {
+    text-align: center;
+    max-width: 400px;
+    background-color: var(--Grey800);
+    border: 1px solid var(--Grey800);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 20px;
+    margin: 100px auto;
+}
+
+p.dev {
+    margin: 50px;
+    letter-spacing: 2px;
+}
+
+p.address {
+    margin: -15px;
+    color: var(--Jasmine);
+}
+
+main {
+    text-align: center;
+    max-width: 400px;
+    background-color: var(--Grey800);
+    border: 1px solid var(--Grey800);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    margin:-180px auto;
+}
+
+main a {
+    text-align: center;
+    line-height: 3;
+    letter-spacing: 1px;
+    width: 90%;
+    max-width: 400px;
+    margin: 13px auto;
+    background-color: var(--Grey700);
+    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    background-color: var(--Jasmine);
+    color: black;
+}
+
