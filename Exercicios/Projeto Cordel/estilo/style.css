@@ -1,1 +1,65 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /* Tamanho minímo da ViwerPort Altura (Vw)seria largura*/
+   background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /* Letras maiúsculas */
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer {
+    color: white;
+    text-decoration: none; /* Retira o sublinhado */
+    font-weight: bolder; /* Deixa o texto mais grosso */
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline; /* Coloca o sublinhado quando passar o mouse */
+}
+
+section {
+    padding-top: 10vh; /* Espaçamento superior */
+    padding-bottom: 10vh; /* Espaçamento inferior */
+    line-height: 2em; /* Espaçamento entre linhas */
+    padding-left: 30px; /* Espaçamento à esquerda */
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(29, 28, 28);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px; /* Espaçamento interno */
+}
