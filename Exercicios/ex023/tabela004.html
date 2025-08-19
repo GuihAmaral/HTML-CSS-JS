@@ -10,7 +10,7 @@
         }
 
         table {
-            width: 100%;
+    
             border-collapse: collapse;;
         }
 
@@ -25,14 +25,6 @@
             padding: 10px;
         }
 
-        .header {
-            text-align: center; /* Alinhamento Horizontal */
-        }
-
-        .list {
-            border: 1px solid black;
-            vertical-align: middle; /* Alinhamento Vertical */
-        }
     </style>
 </head>
 <body>
@@ -42,14 +34,15 @@
             Filmes Favoritos
         </caption>
         <thead>
-        <tr class="header">
-            <th>Grupo</th>
-            <th>Nomes</th>
-            <th colspan="3" class="filmes">Filmes</th>
+        <tr>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
         </tr>
         </thead>
-        <tr class="list">
-            <th rowspan="3" class="header">Mulheres</th>
+        <tbody>
+            <tr>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -68,7 +61,7 @@
             <td>Gladiador</td>
         </tr>
         <tr>
-            <th rowspan="3" class="header">Homens</th>
+            <th rowspan="3" scope="rowgroup">Homens</th>
             <td>Bruno Mendonça</td>
             <td>Intocáveis</td>
             <td>Amnésia</td>
@@ -86,6 +79,7 @@
             <td>Taxi Driver</td>
             <td>Toy Story</td>
         </tr>
+        </tbody>
     </table>
 </body>
 </html>
