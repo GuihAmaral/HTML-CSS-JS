@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Nata+Sans:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Nata+Sans:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Libertinus Sans", sans-serif;
+    --fonte3: "Roboto Flex", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /* Tamanho minímo da ViwerPort Altura (Vw)seria largura*/
+   background-color: darkgray;
+   font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /* Letras maiúsculas */
+    font-family: var(--fonte1);
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer {
+    color: white;
+    text-decoration: none; /* Retira o sublinhado */
+    font-weight: bolder; /* Deixa o texto mais grosso */
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline; /* Coloca o sublinhado quando passar o mouse */
+}
+
+section {
+    padding-top: 10vh; /* Espaçamento superior */
+    padding-bottom: 10vh; /* Espaçamento inferior */
+    line-height: 2em; /* Espaçamento entre linhas */
+    padding-left: 30px; /* Espaçamento à esquerda */
+    font-family: var(--fonte3);
+    
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section > p {
+    padding-bottom: 2em; /* Espaçamento inferior */
+}
+
+section.imagem {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(2, 2, 2, 0.582);
+    text-shadow: 1px 1px 0px black;
+}
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: left center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px; /* Espaçamento interno */
+}
