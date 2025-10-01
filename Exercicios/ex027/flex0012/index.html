@@ -15,23 +15,32 @@
             background-color: orange;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 300px;
+            
 
         }
 
         div#cxA {
-            flex-shrink: 1;
-            flex-grow: 0;
+            /*flex-shrink: 0;
+            fex-grow: 1;
+            flex-basis: 300px;*/
+
+            flex: 1 0 300px
         }
 
         div#cxB {
-            flex-shrink: 1;
-            flex-grow: 0;
+            /*flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 300px;*/
+
+            flex: 1 1 300px
         }
 
         div#cxC {
-            flex-shrink: 1;
-            flex-grow: 0;
+            /*flex-shrink: 8;
+            flex-grow: 1;
+            flex-basis: auto;*/
+
+            flex: 1 8 auto
         }
     </style>
 </head>
